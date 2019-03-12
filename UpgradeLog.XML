@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Fm210Dll_PC">
+</Property><Property Name="方案檔" Value="D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Fm210Dll_PC.sln">
+</Property><Property Name="使用者選項檔" Value="D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Fm210Dll_PC.suo">
+</Property><Property Name="Date" Value="2014年12月30日">
+</Property><Property Name="Time" Value="下午 18:23">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Fm210Dll_PC.sln" Description="檔案已成功備份為 D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Backup\Fm210Dll_PC.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Fm210Dll_PC.suo" Description="檔案已成功備份為 D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Backup\Fm210Dll_PC.suo">
+</Event><Event ErrorLevel="0" Project="Interop.Fm210api" Source="Fm200Dll_PC\Interop.Fm210api.vbproj" Description="專案檔已成功備份為 D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Backup\Fm200Dll_PC\Interop.Fm210api.vbproj">
+</Event><Event ErrorLevel="0" Project="Interop.Fm210api" Source="Fm200Dll_PC\fm210api.vb" Description="檔案已成功備份為 D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Backup\Fm200Dll_PC\fm210api.vb">
+</Event><Event ErrorLevel="0" Project="Interop.Fm210api" Source="Fm200Dll_PC\Module1.vb" Description="檔案已成功備份為 D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Backup\Fm200Dll_PC\Module1.vb">
+</Event><Event ErrorLevel="0" Project="Interop.Fm210api" Source="Fm200Dll_PC\My Project\AssemblyInfo.vb" Description="檔案已成功備份為 D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Backup\Fm200Dll_PC\My Project\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="Interop.Fm210api" Source="Fm200Dll_PC\My Project\Application.Designer.vb" Description="檔案已成功備份為 D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Backup\Fm200Dll_PC\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="Interop.Fm210api" Source="Fm200Dll_PC\My Project\Resources.Designer.vb" Description="檔案已成功備份為 D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Backup\Fm200Dll_PC\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="Interop.Fm210api" Source="Fm200Dll_PC\My Project\Settings.Designer.vb" Description="檔案已成功備份為 D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Backup\Fm200Dll_PC\My Project\Settings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="Interop.Fm210api" Source="Fm200Dll_PC\My Project\Application.myapp" Description="檔案已成功備份為 D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Backup\Fm200Dll_PC\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="Interop.Fm210api" Source="Fm200Dll_PC\My Project\Settings.settings" Description="檔案已成功備份為 D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Backup\Fm200Dll_PC\My Project\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Interop.Fm210api" Source="Fm200Dll_PC\My Project\Resources.resx" Description="檔案已成功備份為 D:\2011-StartekWork\ReaderIntegration\FM220\fm220_vb.net PC solution\dll_Fm220Dll_201210709\Backup\Fm200Dll_PC\My Project\Resources.resx">
+</Event><Event ErrorLevel="1" Project="Interop.Fm210api" Source="Fm200Dll_PC\Interop.Fm210api.vbproj" Description="您的專案目標為 .NET Framework 2.0 或 3.0。如果您的專案使用的組件需要較新的 .NET Framework，您的專案將無法建置。您可以按一下 [專案] 功能表的 [屬性]，然後選擇在 [.NET Framework] 下拉式方塊中選擇新的版本，以變更 .NET Framework 版本 (在 Visual Basic 中，它是位於按一下 [進階編譯器選項...] 按鈕時出現的 [編譯] 索引標籤上)。">
+</Event><Event ErrorLevel="0" Project="Interop.Fm210api" Source="Fm200Dll_PC\Interop.Fm210api.vbproj" Description="專案轉換成功">
+</Event><Event ErrorLevel="3" Project="Interop.Fm210api" Source="Fm200Dll_PC\Interop.Fm210api.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Fm210Dll_PC.sln" Description="方案轉換成功">
+</Event><Event ErrorLevel="3" Project="" Source="Fm210Dll_PC.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Interop.Fm210api" Source="Fm200Dll_PC\Interop.Fm210api.vbproj" Description="掃描完成: 專案檔不需要升級。">
+</Event></UpgradeLog>
