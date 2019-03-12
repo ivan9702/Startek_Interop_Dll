@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Dll_PC")> 
+<Assembly: AssemblyTitle("Dll_PC_20190312")>
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("Dll_PC")> 
-<Assembly: AssemblyCopyright("Copyright ©  2018")> 
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("Dll_PC")>
+<Assembly: AssemblyCopyright("Copyright 2019")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>

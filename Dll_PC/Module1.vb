@@ -36,4 +36,21 @@
     Declare Function _FP_SaveWsqFile Lib "fm220api.dll" Alias "FP_SaveWsqFile" (ByVal hConnect As Integer, ByRef filename As Byte, ByVal comp_ratio As Integer) As Integer
     Declare Function _FP_GetWsqData Lib "fm220api.dll" Alias "FP_GetWsqData" (ByVal hConnect As Integer, ByRef olen As Integer, ByVal comp_ratio As Integer) As Byte
     Declare Function _FP_SaveWsqFileFromData Lib "fm220api.dll" Alias "FP_SaveWsqFileFromData" (ByVal hConnect As Integer, ByRef filename As Byte, ByRef wsq_data As Byte, ByVal olen As Integer) As Integer
+
+    'for local image to minutiea'
+    Declare Function _FP_ConvertImageToTemplate Lib "fm220api.dll" Alias "FP_ConvertImageToTemplate" (ByVal hConnect As Integer, ByRef bRawData As Byte, ByVal nWidth As Integer, ByVal nHeight As Integer, ByRef minu_code As Byte, ByVal mode As Integer, ByVal key As Integer) As Integer
+
+    'for minutiea to encrypted minutiea'
+    Declare Function _FP_DecryptMinutiae Lib "fm220api.dll" Alias "FP_DecryptMinutiae" (ByVal hConnect As Integer, ByRef encrypted_minu_code As Byte, ByRef iv As Byte, ByRef encrypted_skey As Byte, ByRef decrypted_minu_code As Byte) As Integer
+    Declare Function _FP_DecryptMinutiaeEx Lib "fm220api.dll" Alias "FP_DecryptMinutiaeEx" (ByVal hConnect As Integer, ByRef encrypted_minu_code As Byte, ByRef decrypted_minu_code As Byte) As Integer
+    Declare Function _FP_EncryptMinutiae Lib "fm220api.dll" Alias "FP_EncryptMinutiae" (ByVal hConnect As Integer, ByRef minu_code As Byte, ByRef encrypted_minu_code As Byte, ByRef iv As Byte, ByRef encrypted_skey As Byte) As Integer
+    Declare Function _FP_EncryptMinutiaeEx Lib "fm220api.dll" Alias "FP_EncryptMinutiaeEx" (ByVal hConnect As Integer, ByRef minu_code As Byte, ByRef encrypted_minu_code As Byte) As Integer
+
+    'for startek product bio-service/re-direct use'
+    Declare Function _FP_GetEncryptedTemplate Lib "fm220api.dll" Alias "FP_GetEncryptedTemplate" (ByVal hConnect As Integer, ByRef encrypted_minu_code As Byte, ByVal mode As Integer, ByVal key As Integer, ByRef iv As Byte, ByRef encrypted_skey As Byte) As Integer
+    Declare Function _FP_EnrollEx_Encrypted Lib "fm220api.dll" Alias "FP_EnrollEx_Encrypted" (ByVal hConnect As Integer, ByVal hEnrlSet As Integer, ByRef encrypted_fpcode As Byte, ByVal mode As Integer, ByRef iv As Byte, ByRef encrypted_skey As Byte) As Integer
+    Declare Function _FP_SetPublicKey Lib "fm220api.dll" Alias "FP_SetPublicKey" (ByVal hConnect As Integer, ByRef pPublicKey As Byte, ByVal KeyLen As Integer) As Integer
+    Declare Function _FP_SetSessionKey Lib "fm220api.dll" Alias "FP_SetSessionKey" (ByVal hConnect As Integer, ByRef pSessionKey As Byte) As Integer
+    Declare Function _FP_GetDeleteData Lib "fm220api.dll" Alias "FP_GetDeleteData" (ByVal hConnect As Integer, ByRef UserId As Byte, ByVal fpIndex As Integer, ByRef encDeleteData As Byte, ByRef p_enc_len As Integer) As Integer
+
 End Module
