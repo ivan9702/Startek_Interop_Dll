@@ -7,8 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{E4754AD9-9715-45BA-A0D3-A2CB4F29861F}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Interop.Fm220api</RootNamespace>
-    <AssemblyName>Interop.Fm220api</AssemblyName>
+    <RootNamespace>Interop.fm220api</RootNamespace>
+    <AssemblyName>Interop.fm220api</AssemblyName>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileUpgradeFlags>
@@ -51,7 +51,7 @@
     <Import Include="System.Diagnostics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fm220api.vb" />
+    <Compile Include="fpapi.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

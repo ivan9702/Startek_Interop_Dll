@@ -1,5 +1,4 @@
 ﻿Module Module1
-    'FM220 SDK
     Declare Function _FP_Diagnose Lib "fm220api.dll" Alias "FP_Diagnose" (ByVal hConnect As Integer) As Integer
     Declare Function _FP_Snap Lib "fm220api.dll" Alias "_FP_Snap" (ByVal hConnect As Integer) As Integer
     Declare Function _FP_CreateCaptureHandle Lib "fm220api.dll" Alias "FP_CreateCaptureHandle" (ByVal hConnect As Integer) As Integer
@@ -37,5 +36,4 @@
     Declare Function _FP_SaveWsqFile Lib "fm220api.dll" Alias "FP_SaveWsqFile" (ByVal hConnect As Integer, ByRef filename As Byte, ByVal comp_ratio As Integer) As Integer
     Declare Function _FP_GetWsqData Lib "fm220api.dll" Alias "FP_GetWsqData" (ByVal hConnect As Integer, ByRef olen As Integer, ByVal comp_ratio As Integer) As Byte
     Declare Function _FP_SaveWsqFileFromData Lib "fm220api.dll" Alias "FP_SaveWsqFileFromData" (ByVal hConnect As Integer, ByRef filename As Byte, ByRef wsq_data As Byte, ByVal olen As Integer) As Integer
-
 End Module

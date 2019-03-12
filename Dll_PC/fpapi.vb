@@ -1,6 +1,5 @@
 ﻿Option Explicit On
 Public Class fm220api
-    'FM220 SDK
     Function FP_Diagnose(ByVal hConnect As Integer) As Integer
         Return _FP_Diagnose(hConnect)
     End Function
@@ -73,7 +72,6 @@ Public Class fm220api
         Return _FP_EnrollEx(hConnect, hFPEnroll, p_code, fp_code, mode)
     End Function
 
-
     '20101103 add
     Function FP_SaveISOminutia(ByVal hConnect As Integer, ByRef Filename As Byte, ByRef minu_code As Byte) As Integer
         Return _FP_SaveISOminutia(hConnect, Filename, minu_code)
@@ -90,7 +88,6 @@ Public Class fm220api
     Function FP_LoadM1minutia(ByVal hConnect As Integer, ByRef Filename As Byte, ByRef minu_code As Byte) As Integer
         Return _FP_LoadM1minutia(hConnect, Filename, minu_code)
     End Function
-
 
 
     'WSQ

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Interop.Fm220api", "Fm200Dll_PC\Interop.Fm220api.vbproj", "{E4754AD9-9715-45BA-A0D3-A2CB4F29861F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Interop.fpapi", "Dll_PC\Interop.fpapi.vbproj", "{E4754AD9-9715-45BA-A0D3-A2CB4F29861F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
