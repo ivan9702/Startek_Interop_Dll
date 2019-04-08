@@ -1,4 +1,5 @@
 ﻿Module Module1
+
     Declare Function _FP_Diagnose Lib "fm220api.dll" Alias "FP_Diagnose" (ByVal hConnect As Integer) As Integer
     Declare Function _FP_Snap Lib "fm220api.dll" Alias "_FP_Snap" (ByVal hConnect As Integer) As Integer
     Declare Function _FP_CreateCaptureHandle Lib "fm220api.dll" Alias "FP_CreateCaptureHandle" (ByVal hConnect As Integer) As Integer
@@ -52,5 +53,11 @@
     Declare Function _FP_SetPublicKey Lib "fm220api.dll" Alias "FP_SetPublicKey" (ByVal hConnect As Integer, ByRef pPublicKey As Byte, ByVal KeyLen As Integer) As Integer
     Declare Function _FP_SetSessionKey Lib "fm220api.dll" Alias "FP_SetSessionKey" (ByVal hConnect As Integer, ByRef pSessionKey As Byte) As Integer
     Declare Function _FP_GetDeleteData Lib "fm220api.dll" Alias "FP_GetDeleteData" (ByVal hConnect As Integer, ByRef UserId As Byte, ByVal fpIndex As Integer, ByRef encDeleteData As Byte, ByRef p_enc_len As Integer) As Integer
+
+    'for startek new match function use'
+    Declare Function _FP_CodeMatchReaderInit Lib "fm220api.dll" Alias "FP_CodeMatchReaderInit" (ByVal hConnect As Integer) As Integer
+    Declare Function _FP_CodeMatchReaderDeInit Lib "fm220api.dll" Alias "FP_CodeMatchReaderDeInit" (ByVal hConnect As Integer) As Integer
+    Declare Function _FP_CodeMatchReader Lib "fm220api.dll" Alias "FP_CodeMatchReader" (ByVal hConnect As Integer, ByRef encrypted_minu_code As Byte, ByVal security As Integer, ByRef score As Integer) As Integer
+    Declare Function _FP_EnrollEx_EncryptedEx Lib "fm220api.dll" Alias "FP_EnrollEx_EncryptedEx" (ByVal hConnect As Integer, ByVal hEnrlSet As Integer, ByRef encrypted_fpcode As Byte, ByVal mode As Integer) As Integer
 
 End Module
