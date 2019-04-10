@@ -59,5 +59,5 @@
     Declare Function _FP_CodeMatchReaderDeInit Lib "fm220api.dll" Alias "FP_CodeMatchReaderDeInit" (ByVal hConnect As Integer) As Integer
     Declare Function _FP_CodeMatchReader Lib "fm220api.dll" Alias "FP_CodeMatchReader" (ByVal hConnect As Integer, ByRef encrypted_minu_code As Byte, ByVal security As Integer, ByRef score As Integer) As Integer
     Declare Function _FP_EnrollEx_EncryptedEx Lib "fm220api.dll" Alias "FP_EnrollEx_EncryptedEx" (ByVal hConnect As Integer, ByVal hEnrlSet As Integer, ByRef encrypted_fpcode As Byte, ByVal mode As Integer) As Integer
-
+    Declare Function _FP_GetEncryptedTemplateEx Lib "fm220api.dll" Alias "FP_GetEncryptedTemplateEx" (ByVal hConnect As Integer, ByRef encrypted_minu_code As Byte, ByVal mode As Integer, ByVal key As Integer) As Integer
 End Module

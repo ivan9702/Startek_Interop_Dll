@@ -83,14 +83,13 @@ Public Class fm220api
     End Function
     '    Function FP_GetTemplate_KID(ByVal hConnect As Integer, ByRef minu_code As Byte, ByVal mode As Integer, ByVal reserved As Integer, ByVal scale_lv As Integer) As Integer
     '    Return _FP_GetTemplate_KID(hConnect, minu_code, mode, reserved, scale_lv)
-    'End Function
+    '    End Function
     Function FP_LoadISOminutia(ByVal hConnect As Integer, ByRef Filename As Byte, ByRef minu_code As Byte) As Integer
         Return _FP_LoadISOminutia(hConnect, Filename, minu_code)
     End Function
     Function FP_LoadM1minutia(ByVal hConnect As Integer, ByRef Filename As Byte, ByRef minu_code As Byte) As Integer
         Return _FP_LoadM1minutia(hConnect, Filename, minu_code)
     End Function
-
 
     'WSQ
     Function FP_SaveWsqFile(ByVal hConnect As Integer, ByRef filename As Byte, ByVal comp_ratio As Integer) As Integer
@@ -105,12 +104,10 @@ Public Class fm220api
         Return FP_SaveWsqFileFromData(hConnect, filename, wsq_data, olen)
     End Function
 
-
     'for local image to minutiea'
     Function FP_ConvertImageToTemplate(ByVal hConnect As Integer, ByRef bRawData As Byte, ByVal nWidth As Integer, ByVal nHeight As Integer, ByRef minu_code As Byte, ByVal mode As Integer, ByVal key As Integer) As Integer
         Return _FP_ConvertImageToTemplate(hConnect, bRawData, nWidth, nHeight, minu_code, mode, key)
     End Function
-
 
     'for minutiea to encrypted minutiea'
     Function FP_DecryptMinutiae(ByVal hConnect As Integer, ByRef encrypted_minu_code As Byte, ByRef iv As Byte, ByRef encrypted_skey As Byte, ByRef decrypted_minu_code As Byte) As Integer
@@ -128,7 +125,6 @@ Public Class fm220api
     Function FP_EncryptMinutiaeEx(ByVal hConnect As Integer, ByRef minu_code As Byte, ByRef encrypted_minu_code As Byte) As Integer
         Return _FP_EncryptMinutiaeEx(hConnect, minu_code, encrypted_minu_code)
     End Function
-
 
     'for startek product bio-service/re-direct use'
     Function FP_GetEncryptedTemplate(ByVal hConnect As Integer, ByRef encrypted_minu_code As Byte, ByVal mode As Integer, ByVal key As Integer, ByRef iv As Byte, ByRef encrypted_skey As Byte) As Integer
@@ -151,7 +147,6 @@ Public Class fm220api
         Return _FP_GetDeleteData(hConnect, UserId, fpIndex, encDeleteData, p_enc_len)
     End Function
 
-    
     'for startek new match function use'
     Function FP_CodeMatchReaderInit(ByVal hConnect As Integer) As Integer
         Return _FP_CodeMatchReaderInit(hConnect)
@@ -165,9 +160,12 @@ Public Class fm220api
         Return _FP_CodeMatchReader(hConnect, encrypted_minu_code, security, score)
     End Function
     
-    
     Function FP_EnrollEx_EncryptedEx(ByVal hConnect As Integer, ByVal hEnrlSet As Integer, ByRef encrypted_fpcode As Byte, ByVal mode As Integer) As Integer
         Return _FP_EnrollEx_EncryptedEx(hConnect, hEnrlSet, encrypted_fpcode, mode)
+    End Function
+    
+    Function FP_GetEncryptedTemplateEx(ByVal hConnect As Integer, ByRef encrypted_minu_code As Byte, ByVal mode As Integer, Byval key As Integer) As Integer
+        Return FP_GetEncryptedTemplateEx(hConnect, encrypted_minu_code, mode, key)
     End Function
     
 End Class

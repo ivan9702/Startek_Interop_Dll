@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Interop.fpapi", "Dll_PC\Interop.fpapi.vbproj", "{E4754AD9-9715-45BA-A0D3-A2CB4F29861F}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FM220.Interop.fpapi", "Dll_PC\FM220.Interop.fpapi.vbproj", "{E4754AD9-9715-45BA-A0D3-A2CB4F29861F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0500F830-EDAF-41E0-9376-B6D98BC25767}
 	EndGlobalSection
 EndGlobal
