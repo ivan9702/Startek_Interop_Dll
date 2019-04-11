@@ -1,7 +1,7 @@
 ﻿Module Module1
 
     Declare Function _FP_Diagnose Lib "fm220api.dll" Alias "FP_Diagnose" (ByVal hConnect As Integer) As Integer
-    Declare Function _FP_Snap Lib "fm220api.dll" Alias "_FP_Snap" (ByVal hConnect As Integer) As Integer
+    Declare Function _FP_Snap Lib "fm220api.dll" Alias "FP_Snap" (ByVal hConnect As Integer) As Integer
     Declare Function _FP_CreateCaptureHandle Lib "fm220api.dll" Alias "FP_CreateCaptureHandle" (ByVal hConnect As Integer) As Integer
     Declare Function _FP_Capture Lib "fm220api.dll" Alias "FP_Capture" (ByVal hConnect As Integer, ByVal hFPCapture As Integer) As Integer
     Declare Function _FP_DestroyCaptureHandle Lib "fm220api.dll" Alias "FP_DestroyCaptureHandle" (ByVal hConnect As Integer, ByVal hFPCapture As Integer) As Integer

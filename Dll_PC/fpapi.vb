@@ -95,7 +95,7 @@ Public Class fm220api
     Function FP_SaveWsqFile(ByVal hConnect As Integer, ByRef filename As Byte, ByVal comp_ratio As Integer) As Integer
         Return _FP_SaveWsqFile(hConnect, filename, comp_ratio)
     End Function
-    
+
     Function FP_GetWsqData(ByVal hConnect As Integer, ByRef olen As Integer, ByVal comp_ratio As Integer) As Byte
         Return _FP_GetWsqData(hConnect, olen, comp_ratio)
     End Function
@@ -151,21 +151,21 @@ Public Class fm220api
     Function FP_CodeMatchReaderInit(ByVal hConnect As Integer) As Integer
         Return _FP_CodeMatchReaderInit(hConnect)
     End Function
-    
+
     Function FP_CodeMatchReaderDeInit(ByVal hConnect As Integer) As Integer
         Return _FP_CodeMatchReaderDeInit(hConnect)
     End Function
-    
+
     Function FP_CodeMatchReader(ByVal hConnect As Integer, ByRef encrypted_minu_code As Byte, ByVal security As Integer, ByRef score As Integer) As Integer
         Return _FP_CodeMatchReader(hConnect, encrypted_minu_code, security, score)
     End Function
-    
+
     Function FP_EnrollEx_EncryptedEx(ByVal hConnect As Integer, ByVal hEnrlSet As Integer, ByRef encrypted_fpcode As Byte, ByVal mode As Integer) As Integer
         Return _FP_EnrollEx_EncryptedEx(hConnect, hEnrlSet, encrypted_fpcode, mode)
     End Function
-    
-    Function FP_GetEncryptedTemplateEx(ByVal hConnect As Integer, ByRef encrypted_minu_code As Byte, ByVal mode As Integer, Byval key As Integer) As Integer
-        Return FP_GetEncryptedTemplateEx(hConnect, encrypted_minu_code, mode, key)
+
+    Function FP_GetEncryptedTemplateEx(ByVal hConnect As Integer, ByRef encrypted_minu_code As Byte, ByVal mode As Integer, ByVal key As Integer) As Integer
+        Return _FP_GetEncryptedTemplateEx(hConnect, encrypted_minu_code, mode, key)
     End Function
-    
+
 End Class
