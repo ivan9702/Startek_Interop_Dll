@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E4754AD9-9715-45BA-A0D3-A2CB4F29861F}</ProjectGuid>
+    <ProjectGuid>{71DD2C42-6FD2-446E-9B54-516B3590F50F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Interop.fm220api</RootNamespace>
     <AssemblyName>Interop.fm220api</AssemblyName>
@@ -32,10 +32,11 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Interop\FM220\</OutputPath>
+    <OutputPath>bin\Interop\Normal\FM220\</OutputPath>
     <DocumentationFile>Interop.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>InternalFull = "1", StartekDll = "fm220api.dll"</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
