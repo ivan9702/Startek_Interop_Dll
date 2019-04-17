@@ -22,10 +22,10 @@ Namespace My.Resources
     '''<summary>
     '''  用於查詢當地語系化字串等的強型別資源類別
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0"),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
-     Global.Microsoft.VisualBasic.HideModuleNameAttribute()>  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0"),
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+     Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),
+     Global.Microsoft.VisualBasic.HideModuleNameAttribute()>
     Friend Module Resources
         
         Private resourceMan As Global.System.Resources.ResourceManager
@@ -35,11 +35,17 @@ Namespace My.Resources
         '''<summary>
         '''  傳回這個類別使用的快取的 ResourceManager 執行個體。
         '''</summary>
-        <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>
         Friend ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
             Get
                 If Object.ReferenceEquals(resourceMan, Nothing) Then
+#If Device = "FM220" Then
                     Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Interop.fm220api.Resources", GetType(Resources).Assembly)
+#ElseIf Device = "FM300" Then
+                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Interop.fm300api.Resources", GetType(Resources).Assembly)
+#ElseIf Device = "SFC360" Then
+                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Interop.sfc360api.Resources", GetType(Resources).Assembly)
+#End If
                     resourceMan = temp
                 End If
                 Return resourceMan

@@ -1,6 +1,12 @@
 ﻿Option Explicit On
 
+#If Device = "FM220" Then
 Public Class fm220api
+#ElseIf Device = "FM300" Then
+Public Class fm300api
+#ElseIf Device = "SFC360" Then
+Public Class sfc360api
+#End If
 
     Function FP_Diagnose(ByVal hConnect As Integer) As Integer
         Return _FP_Diagnose(hConnect)
