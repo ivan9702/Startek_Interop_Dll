@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FM220_InternalFull.Interop.fpapi", "Dll_PC\FM220_InternalFull.Interop.fpapi.vbproj", "{E4754AD9-9715-45BA-A0D3-A2CB4F29861F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FM220_InternalFull.Interop.fpapi", "SampleCode\FM220_InternalFull.Interop.fpapi.vbproj", "{E4754AD9-9715-45BA-A0D3-A2CB4F29861F}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FM220_Normal.Interop.fpapi", "Dll_PC\FM220_Normal.Interop.fpapi.vbproj", "{71DD2C42-6FD2-446E-9B54-516B3590F50F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FM220_Normal.Interop.fpapi", "SampleCode\FM220_Normal.Interop.fpapi.vbproj", "{71DD2C42-6FD2-446E-9B54-516B3590F50F}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FM300_InternalFull.Interop.fpapi", "Dll_PC\FM300_InternalFull.Interop.fpapi.vbproj", "{E3689064-6980-4494-95AF-D07489045022}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FM300_InternalFull.Interop.fpapi", "SampleCode\FM300_InternalFull.Interop.fpapi.vbproj", "{E3689064-6980-4494-95AF-D07489045022}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FM300_Normal.Interop.fpapi", "Dll_PC\FM300_Normal.Interop.fpapi.vbproj", "{97F307AD-E110-4009-A3E0-41397B65A357}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FM300_Normal.Interop.fpapi", "SampleCode\FM300_Normal.Interop.fpapi.vbproj", "{97F307AD-E110-4009-A3E0-41397B65A357}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SFC360_InternalFull.Interop.fpapi", "Dll_PC\SFC360_InternalFull.Interop.fpapi.vbproj", "{4B8FDB8B-3DEE-410B-805D-4C321D129ACF}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SFC360_InternalFull.Interop.fpapi", "SampleCode\SFC360_InternalFull.Interop.fpapi.vbproj", "{4B8FDB8B-3DEE-410B-805D-4C321D129ACF}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SFC360_Normal.Interop.fpapi", "Dll_PC\SFC360_Normal.Interop.fpapi.vbproj", "{4B7F9C4F-E4CC-454C-B68C-82DC063790E0}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SFC360_Normal.Interop.fpapi", "SampleCode\SFC360_Normal.Interop.fpapi.vbproj", "{4B7F9C4F-E4CC-454C-B68C-82DC063790E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
