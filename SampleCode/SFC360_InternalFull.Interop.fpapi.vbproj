@@ -37,8 +37,8 @@
     <DocumentationFile>Interop.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <DefineConstants>InternalFull = "1", StartekDll = "sfc360api.dll", Device = "SFC360"</DefineConstants>
-    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>InternalFull = "1", Device = "SFC360"</DefineConstants>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
