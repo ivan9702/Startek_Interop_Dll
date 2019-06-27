@@ -21,6 +21,7 @@
     Declare Function _FP_DisplayImage Lib "fm220api.dll" Alias "FP_DisplayImage" (ByVal hConnect As Integer, ByVal hDC As Integer, ByVal hFPImage As Integer, ByVal nStartX As Integer, ByVal nStartY As Integer, ByVal nDestWidth As Integer, ByVal nDestHeight As Integer) As Integer
     Declare Function _FP_ConnectCaptureDriver Lib "fm220api.dll" Alias "FP_ConnectCaptureDriver" (ByVal reserved As Integer) As Integer
     Declare Sub _FP_DisconnectCaptureDriver Lib "fm220api.dll" Alias "FP_DisconnectCaptureDriver" (ByVal hConnect As Integer)
+    Declare Function _FP_GetImageQuality Lib "fm220api.dll" Alias "FP_GetImageQuality" (ByVal hConnect As Integer) As Integer
 
     'ISO 19794-2 New Func
     Declare Function _FP_GetTemplate Lib "fm220api.dll" Alias "FP_GetTemplate" (ByVal hConnect As Integer, ByRef minu_code As Byte, ByVal mode As Integer, ByVal reserved As Integer) As Integer
@@ -82,6 +83,7 @@
     Declare Function _FP_DisplayImage Lib "fm300api.dll" Alias "FP_DisplayImage" (ByVal hConnect As Integer, ByVal hDC As Integer, ByVal hFPImage As Integer, ByVal nStartX As Integer, ByVal nStartY As Integer, ByVal nDestWidth As Integer, ByVal nDestHeight As Integer) As Integer
     Declare Function _FP_ConnectCaptureDriver Lib "fm300api.dll" Alias "FP_ConnectCaptureDriver" (ByVal reserved As Integer) As Integer
     Declare Sub _FP_DisconnectCaptureDriver Lib "fm300api.dll" Alias "FP_DisconnectCaptureDriver" (ByVal hConnect As Integer)
+    Declare Function _FP_GetImageQuality Lib "fm300api.dll" Alias "FP_GetImageQuality" (ByVal hConnect As Integer) As Integer
 
     'ISO 19794-2 New Func
     Declare Function _FP_GetTemplate Lib "fm300api.dll" Alias "FP_GetTemplate" (ByVal hConnect As Integer, ByRef minu_code As Byte, ByVal mode As Integer, ByVal reserved As Integer) As Integer
@@ -143,6 +145,7 @@
     Declare Function _FP_DisplayImage Lib "sfc360api.dll" Alias "FP_DisplayImage" (ByVal hConnect As Integer, ByVal hDC As Integer, ByVal hFPImage As Integer, ByVal nStartX As Integer, ByVal nStartY As Integer, ByVal nDestWidth As Integer, ByVal nDestHeight As Integer) As Integer
     Declare Function _FP_ConnectCaptureDriver Lib "sfc360api.dll" Alias "FP_ConnectCaptureDriver" (ByVal reserved As Integer) As Integer
     Declare Sub _FP_DisconnectCaptureDriver Lib "sfc360api.dll" Alias "FP_DisconnectCaptureDriver" (ByVal hConnect As Integer)
+    Declare Function _FP_GetImageQuality Lib "sfc360api.dll" Alias "FP_GetImageQuality" (ByVal hConnect As Integer) As Integer
 
     'ISO 19794-2 New Func
     Declare Function _FP_GetTemplate Lib "sfc360api.dll" Alias "FP_GetTemplate" (ByVal hConnect As Integer, ByRef minu_code As Byte, ByVal mode As Integer, ByVal reserved As Integer) As Integer

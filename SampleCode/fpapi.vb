@@ -71,6 +71,9 @@ Public Class sfc360api
     Sub FP_DisconnectCaptureDriver(ByVal hConnect As Integer)
         _FP_DisconnectCaptureDriver(hConnect)
     End Sub
+    Function FP_GetImageQuality(ByVal hConnect As Integer) As Integer
+        Return _FP_GetImageQuality(hConnect)
+    End Function
 
     'ISO 19794-2 New Func
     Function FP_GetTemplate(ByVal hConnect As Integer, ByRef minu_code As Byte, ByVal mode As Integer, ByVal reserved As Integer) As Integer
