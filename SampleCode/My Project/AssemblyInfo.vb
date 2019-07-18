@@ -8,9 +8,27 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Dll_PC_20190418")>
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")>
+#If Device = "FM220"
+#If InternalFull = "1"
+<Assembly: AssemblyTitle("Interop.fm220api InternalFull 20190711")>
+#Else
+<Assembly: AssemblyTitle("Interop.fm220api Normal 20190711")>
+#End If
+#ElseIf Device = "FM300"
+#If InternalFull = "1"
+<Assembly: AssemblyTitle("Interop.fm300api InternalFull 20190711")>
+#Else
+<Assembly: AssemblyTitle("Interop.fm300api Normal 20190711")>
+#End If
+#ElseIf Device = "SFC360"
+#If InternalFull = "1"
+<Assembly: AssemblyTitle("Interop.sfc360api InternalFull 20190711")>
+#Else
+<Assembly: AssemblyTitle("Interop.sfc360api Normal 20190711")>
+#End If
+#End If
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("Startek")>
 <Assembly: AssemblyProduct("Dll_PC")>
 <Assembly: AssemblyCopyright("Copyright 2019")>
 <Assembly: AssemblyTrademark("")> 
@@ -32,4 +50,4 @@ Imports System.Runtime.InteropServices
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
 <Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.1.0.0")> 
+<Assembly: AssemblyFileVersion("1.1.0.1")> 
