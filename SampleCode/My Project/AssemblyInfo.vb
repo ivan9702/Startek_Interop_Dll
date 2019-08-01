@@ -10,21 +10,21 @@ Imports System.Runtime.InteropServices
 
 #If Device = "FM220"
 #If InternalFull = "1"
-<Assembly: AssemblyTitle("Interop.fm220api InternalFull 20190711")>
+<Assembly: AssemblyTitle("Interop.fm220api InternalFull 20190801")>
 #Else
-<Assembly: AssemblyTitle("Interop.fm220api Normal 20190711")>
+<Assembly: AssemblyTitle("Interop.fm220api Normal 20190081")>
 #End If
 #ElseIf Device = "FM300"
 #If InternalFull = "1"
-<Assembly: AssemblyTitle("Interop.fm300api InternalFull 20190711")>
+<Assembly: AssemblyTitle("Interop.fm300api InternalFull 20190081")>
 #Else
-<Assembly: AssemblyTitle("Interop.fm300api Normal 20190711")>
+<Assembly: AssemblyTitle("Interop.fm300api Normal 20190081")>
 #End If
 #ElseIf Device = "SFC360"
 #If InternalFull = "1"
-<Assembly: AssemblyTitle("Interop.sfc360api InternalFull 20190711")>
+<Assembly: AssemblyTitle("Interop.sfc360api InternalFull 20190081")>
 #Else
-<Assembly: AssemblyTitle("Interop.sfc360api Normal 20190711")>
+<Assembly: AssemblyTitle("Interop.sfc360api Normal 20190081")>
 #End If
 #End If
 <Assembly: AssemblyDescription("")>
@@ -50,4 +50,4 @@ Imports System.Runtime.InteropServices
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
 <Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.1.0.1")> 
+<Assembly: AssemblyFileVersion("1.1.0.2")> 
