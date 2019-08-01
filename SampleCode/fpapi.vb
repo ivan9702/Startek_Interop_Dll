@@ -51,7 +51,13 @@ Public Class sfc360api
         Return _FP_DisplayImage(hConnect, hDC, hFPImage, nStartX, nStartY, nDestWidth, nDestHeight)
     End Function
     Function FP_ConnectCaptureDriver(ByVal reserved As Integer) As Integer
-        Return _FP_ConnectCaptureDriver(reserved)
+        Dim result As Integer = 0
+        Try
+            result = _FP_ConnectCaptureDriver(reserved)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+        Return result
     End Function
     Sub FP_DisconnectCaptureDriver(ByVal hConnect As Integer)
         _FP_DisconnectCaptureDriver(hConnect)
