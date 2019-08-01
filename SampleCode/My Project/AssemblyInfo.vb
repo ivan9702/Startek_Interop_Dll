@@ -12,19 +12,19 @@ Imports System.Runtime.InteropServices
 #If InternalFull = "1"
 <Assembly: AssemblyTitle("Interop.fm220api InternalFull 20190801")>
 #Else
-<Assembly: AssemblyTitle("Interop.fm220api Normal 20190081")>
+<Assembly: AssemblyTitle("Interop.fm220api Normal 20190801")>
 #End If
 #ElseIf Device = "FM300"
 #If InternalFull = "1"
-<Assembly: AssemblyTitle("Interop.fm300api InternalFull 20190081")>
+<Assembly: AssemblyTitle("Interop.fm300api InternalFull 20190801")>
 #Else
-<Assembly: AssemblyTitle("Interop.fm300api Normal 20190081")>
+<Assembly: AssemblyTitle("Interop.fm300api Normal 20190801")>
 #End If
 #ElseIf Device = "SFC360"
 #If InternalFull = "1"
-<Assembly: AssemblyTitle("Interop.sfc360api InternalFull 20190081")>
+<Assembly: AssemblyTitle("Interop.sfc360api InternalFull 20190801")>
 #Else
-<Assembly: AssemblyTitle("Interop.sfc360api Normal 20190081")>
+<Assembly: AssemblyTitle("Interop.sfc360api Normal 20190801")>
 #End If
 #End If
 <Assembly: AssemblyDescription("")>
